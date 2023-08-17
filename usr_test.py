@@ -31,7 +31,7 @@ def insert_data(person_count, formatted_time):
     
     # 插入資料
     insert_query = '''
-    INSERT INTO count_person (timestamp, person_count)
+    INSERT INTO count_person (formatted_time, person_count)
     VALUES (?, ?);
     '''
     cursor.execute(insert_query, (formatted_time, person_count))
